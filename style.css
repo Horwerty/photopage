@@ -1,0 +1,784 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      width: 480px;
+      background-color: rgb(0, 0, 0);
+      margin: 0 auto;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+.firstSection {
+      width: 100%;
+}
+
+footer {
+      width: 100%;
+      color: #fff;
+      margin-top: 1.5rem;
+      background-color: rgba(128, 128, 128, 0.131);
+}
+
+#headerNav {
+      display: flex;
+      justify-content: space-between;
+      height: 5rem;
+      padding: 1.5rem;
+      background-color: white;
+      position: sticky;
+      /* width: 80%; */
+}
+
+#headerNav ul li {
+      list-style: none;
+      display: inline;
+      font-size: 0.5rem;
+}
+
+.bxs-user {
+      border-radius: 3px;
+      background-color: rgba(0, 0, 255, 0.774);
+      color: #fff;
+      height: 1.5em;
+      width: 1.5em;
+      padding: 3px;
+      cursor: pointer;
+}
+
+.logo {
+      color: white;
+      border:   none;
+      height: 1.6rem;
+      width: 6rem;
+      padding: 5px 8px;
+      border-radius: 5px;
+      background-image: linear-gradient(to right, blue,green, rgb(15, 230, 15), rgb(73, 212, 73));
+      cursor: pointer;
+}
+
+.logo a {
+      color: white;
+      text-decoration: none;
+}
+
+#menu ul li {
+      padding: 5px;
+      margin: 3px;
+      box-shadow: 1px 1px 1px rgb(86, 84, 84);
+      border-radius: 10px;
+      cursor: pointer;
+      border-top: solid rgba(0, 0, 0, 0.667);
+      /* transform: translateX(1.0);
+      transition: all 2s ease-in; */
+}
+
+#menu ul li a {
+      color: black;
+      text-decoration: none; 
+}
+
+.hero img {
+      width: 50px;
+      height: 50px;
+      background-color: white;     
+}
+
+.hero {
+      padding-top: 4.5rem;
+      z-index: 9;
+      width: 100%;
+      background-size: cover;
+      background-position: contain;
+      position: relative;
+      height: 20rem;
+      text-align: center;
+      padding-right: 50px;
+      padding-left: 50px;
+      color: white;
+      background-repeat: no-repeat;
+      background-image:url(https://media.gettyimages.com/photos/close-up-of-a-girl-taking-a-picture-picture-id101977109?k=20&m=101977109&s=612x612&w=0&h=eumAhtr0I_KzafgTUnrCLK6_Q0BoXs8rhVo5YT944DA=);
+}
+
+.heroCover {
+      background: rgba(0, 0, 0, 0.7);
+      /* border: solid tomato; */
+      width: 100%;
+      height: 20em;
+      position: absolute;
+      opacity: 0.3;
+      z-index: 10;
+}
+
+
+#heroBtn {
+      cursor: pointer;
+      margin-top: 0.8rem;
+      color: white;
+      height: 1.6rem;
+      border-radius: 8px;
+      width: 7em;
+      border: none;
+      background-image: linear-gradient(to right, blue,green, rgb(15, 230, 15), rgb(73, 212, 73)); 
+}
+
+#dotted {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      color: #fff;
+}
+
+.sliderTitle  h2 {
+      text-align: center;
+      color: #fff;
+      text-decoration: overline gray;
+     font-size: 1.2rem; 
+}
+
+.sliderDiv {
+      margin: 1em;
+      width: 95%;
+}
+
+/* #sliderBtn {
+      
+} */
+
+.eachCard {
+      border-radius: 10px;
+      box-shadow: 2px 1px 1px black;
+      object-fit:inherit;
+      width: 90%;
+      margin: 20px;
+      color: #fff;
+      height: 35em;
+      align-content: center;
+      padding-left: 5px;
+      display: flex;
+      flex-direction: column;
+}
+
+.eachCard img {
+      max-width: 100%;
+      max-height: 68%;
+}
+
+.eachCard h5 {
+      padding-bottom: 1.5rem;
+}
+
+button {
+      margin-top: 10px;
+      width: 6rem;
+      border: none;
+      /* border-radius: 5px; */
+}
+
+#enlarge {
+      background-color: rgba(0, 0, 255, 0.787);
+      color: #fff;
+      margin-right: 6em;
+      height: 4vh;
+}
+
+#selectPix {
+      background-color: green;
+      color: #fff;
+      margin-left: 10em;
+      height: 4vh;
+}
+
+#topLogo {
+      background-color: rgba(0, 0, 255, 0.787);
+      border-radius: 3px;
+      font-size: 0.8rem;
+}
+
+.bxs-message-alt {
+      color: #fff;
+      background-image:linear-gradient(to right, blue, green);
+      width: 1.5rem;
+      height: 1.2rem;
+      text-align: center;
+      padding-top: 3px;
+}
+
+#blue {
+      color: blue;
+}
+
+#gold {
+      color: goldenrod;
+}
+
+#green {
+      color: green;
+}
+.sectionTwo {
+      width: 95%;
+}
+
+.partA {
+      border: none;
+      box-shadow: 2px 2px 2px black;
+      object-fit:contain;
+      width: 88%;
+      margin-left: 35px;
+}
+
+.partA h3 {
+      background-color:rgba(0, 0, 255, 0.787) ;
+      color: #fff;
+      margin-bottom: 5px;
+      text-align: center;
+      font-size: 1.2em;
+}
+
+.partA img {
+            max-width: 100%;
+            height: 86.5%;
+}
+
+.partB {
+      padding-top: 2rem;
+      width: 90%;
+      margin-left: 35px;
+      margin-top: 25px;    
+}
+
+
+.partBone {
+      color: #fff;
+      /* border: solid tomato; */
+      object-fit: contain;
+}
+
+/* .partBone .grid2,
+.partBone .grid3 {
+      margin-right: 10px;
+} */
+
+.partBone img {
+      max-width: 100%;
+}
+
+.partBtwo {
+      color: #fff;
+      margin-top: 10px;
+      object-fit: contain;
+}
+
+.partBtwo img {
+      max-width: 100%;
+}
+
+#bigCam {
+      color: #fff;
+      background-image: linear-gradient(to right, blue, green);
+      font-size: 2rem;
+      width: 2.5rem;
+      margin-bottom: 10px;
+      margin-left: 50%;
+      position: relative;
+}
+
+.grid1,
+.grid5,
+.grid8 {
+      padding: 5px;
+      border: #fff solid;
+}
+
+#textHeading {
+      color: rgb(109, 104, 104);
+      text-align: center;
+      margin-top: 10px;
+}
+
+#textHeadingtwo {
+      color: rgb(109, 104, 104);
+      margin-left: 25px;
+      /* text-align: center; */
+}
+
+#imgBtn {
+      background-color: #fff;
+      color: black;
+      border-radius: 20px;
+      height: 2rem;
+      cursor: pointer;
+}
+
+.bxs-camera {
+      background-image: linear-gradient(to right, blue, green);
+      position: absolute;
+      width: 2.3em;
+      border: none;
+      border-radius: 15px;
+      height: 1.2em;
+      text-align: center;
+      font-size: 1.5rem;
+      padding-top: 4px;
+      margin-top: 10px;
+      margin-left: 5px;
+}
+
+#topId {
+      background-color: #fff;
+}
+
+/* #gridImg {
+      position: relative;
+} */
+
+.sectionThree {
+      width: 95%;
+}
+
+
+.imgCard {
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px black;
+      color: #fff;
+      object-fit: contain;
+      width: 90%;
+      height: 25rem;
+      margin:10px 25px;
+}
+
+.imgCard img {
+      /* object-fit: contain; */
+      max-width: 100%;
+      max-height: 70%;
+}
+
+.threeDivs{
+      display: flex;
+      width: 80%;
+      padding: 10px 5px;
+      margin: 1.5rem 25px;
+}
+
+.threeDivs h2 {
+      font-size: 1.2rem;
+      text-decoration: underline;
+      color: rgba(0, 162, 255, 0.864);
+
+}
+
+#secondMenu ul li {
+      list-style-type: circle blue;
+      color: #fff;
+      text-decoration: none;
+      font-size: smaller;
+}
+
+
+.about {
+      font-size: 0.6rem;
+      padding: 0 5px;
+      margin-right: 3em;
+}
+
+
+#inputSect {
+      margin-top: 10px;
+      margin-right: 0;
+      width: 5rem;
+}
+
+#subBtn {
+      margin-left: 0;
+      width: 2rem;
+      background-color: rgba(0, 162, 255, 0.864);
+}
+
+#subBlock {
+      display: flex;
+}
+
+.bxs-bell-ring {
+      padding-top: 3px;
+}
+
+.bxl-instagram-alt,
+.bxl-whatsapp,
+.bxl-twitter,
+.bxl-tiktok,
+.bxl-linkedin-square,
+.bxl-facebook-circle {
+      margin: 3px 4px;
+      padding-top: 2px;
+      background-color: rgb(16, 194, 87);
+      border-radius: 5px;
+}
+
+.footerDivs {
+      font-size: 0.3rem;
+      text-align: center;
+      padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+      body {
+            width: 80%;
+            background-color: rgb(0, 0, 0);
+            margin: 0 auto;
+      }
+
+      #menu ul li {
+            font-size: 0.7rem;
+            padding: 5px;
+            margin: 5px;
+            box-shadow: 1px 1px 1px rgb(86, 84, 84);
+            border-radius: 10px;
+            cursor: pointer;
+            border-top: solid rgba(0, 0, 0, 0.667);
+            /* transform: translateX(1.0);
+            transition: all 2s ease-in; */
+      }
+
+      .hero {
+            padding-top: 6.5rem;
+            z-index: 9;
+            width: 100%;
+            background-size: cover;
+            background-position: contain;
+            position: relative;
+            height: 20rem;
+            text-align: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            color: white;
+            background-repeat: no-repeat;
+            background-image:url(https://media.gettyimages.com/photos/close-up-of-a-girl-taking-a-picture-picture-id101977109?k=20&m=101977109&s=612x612&w=0&h=eumAhtr0I_KzafgTUnrCLK6_Q0BoXs8rhVo5YT944DA=);
+      }
+
+      #heroBtn {
+            cursor: pointer;
+            margin-top: 0.8rem;
+            color: white;
+            height: 1.6rem;
+            border-radius: 8px;
+            width: 7em;
+            border: none;
+            background-image: linear-gradient(to right, blue,green, rgb(15, 230, 15), rgb(73, 212, 73)); 
+      }
+      
+
+      .sectionTwo {
+            display: flex;
+            flex-direction: row;
+            row-gap: 1fr 2fr;
+            /* margin: 15px; */
+            overflow-y: hidden;
+            /* object-fit: contain; */
+            height: 44rem;
+            width: 100%;
+            /* border: #fff solid; */
+      }
+
+      .partA {
+            border: none;
+            box-shadow: 2px 2px 2px black;
+            object-fit:contain;
+            max-width: 42%;
+            margin-left: 0;
+            margin-right: 0.5rem;
+      }
+      
+      .partB {
+            /* padding-top: 2rem; */
+            width: 58%;
+            margin-left: 10px;
+            margin-top:0;
+      }
+        
+      
+      .partA img {
+            max-width: 100%;
+            height: 100%;
+      }
+      
+      .partA h3 {
+            background-color:rgba(0, 0, 255, 0.787) ;
+            color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.2em;
+      }
+      
+      .partBone {
+            color: #fff;
+            /* border: solid tomato; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            object-fit: contain;
+      }
+      
+      .partBone .grid2,
+      .partBone .grid3 {
+            margin-right: 10px;
+      }
+      
+      .partBone img {
+            max-width: 100%;
+      }
+      
+      .partBtwo {
+            color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* margin-top: 10px; */
+            object-fit: contain;
+      }
+
+      .grid1,
+      .grid5,
+      .grid8 {
+            padding:10px 5px;
+            border: none;
+      }
+
+      #bigCam {
+            color: #fff;
+            background-image: linear-gradient(to right, blue, green);
+            font-size: 2rem;
+            width: 2.5rem;
+            margin-bottom: 10px;
+            margin-left: 5%;
+            position: relative;
+      }
+      
+      .grid5 {
+            margin-right: 10px;
+      }
+      
+      .grid7 {
+            margin-right: 10px;
+      }
+      
+      .partBtwo img {
+            max-width: 100%;
+      }
+      
+      .grid1 {
+            grid-column: 1/4;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+      }
+
+      .eachCard {
+            border-radius: 10px;
+            box-shadow: 2px 1px 1px black;
+            object-fit:inherit;
+            width: 55rem;
+            margin: 3px;
+            color: #fff;
+      }
+
+      .sliderDiv {
+            display: flex;
+            flex-direction: row;
+            margin: 1em 0.5px;
+            width: 100%;
+      }
+      .sliderTitle  h2 {
+            text-align: center;
+            color: #fff;
+            text-decoration: overline gray;
+           font-size: 1.2rem; 
+      }
+      
+      .sliderDiv {
+            margin: 1em 0.5px;
+            width: 100%;
+      }
+      
+      #sliderBtn {
+            cursor: pointer;
+            margin: 7em 0.1em;
+            font-size: 1.8em;
+            border: none;
+            width: 5rem;
+            height: 4vh;
+            background-color: rgba(14, 14, 244, 0.915);
+            border-radius: 3px;
+            color: white;
+      }
+
+      .sectionThree {
+            width: 100%;
+      }
+
+      .allCards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+      }
+   
+
+      .bx-dots-horizontal-rounded{
+            font-size: 3rem;
+            margin-left: 50%;
+      }
+
+
+      .eachCard img {
+            width: 100%;
+            height:65%;
+      }
+      
+      .eachCard h5 {
+            padding-bottom: 1.5rem;
+      }
+      
+      button {
+            margin-top: 10px;
+            width: 6rem;
+            /* border-radius: 5px; */
+      }
+      
+            
+      #topLogo {
+            background-color: rgba(0, 0, 255, 0.787);
+            border-radius: 3px;
+            font-size: 0.8rem;
+      }
+      
+      .bxs-message-alt {
+            color: #fff;
+            background-image:linear-gradient(to right, blue, green);
+            width: 1.5rem;
+            height: 1.2rem;
+            text-align: center;
+            padding-top: 3px;
+      }
+
+      .sliderTitle  h2 {
+            text-align: center;
+            color: #fff;
+            text-decoration: overline gray;
+           font-size: 1.2rem; 
+      }
+      
+      .sliderDiv {
+            margin: 1em 0.5px;
+            width: 95%;
+      }
+      
+      #sliderBtn {
+            cursor: pointer;
+            margin: 7em 0.1em;
+            font-size: 1.8em;
+            border: none;
+            width: 5rem;
+            height: 4vh;
+            background-color: rgba(14, 14, 244, 0.915);
+            border-radius: 3px;
+            color: white;
+      }
+
+
+      #enlarge {
+            cursor: pointer;
+            background-color: rgba(0, 0, 255, 0.787);
+            color: #fff;
+            margin-right: 3.5em;
+            height: 4vh;
+      }
+      
+      #selectPix {
+            cursor: pointer;
+            background-color: green;
+            color: #fff;
+            margin-left:5em;
+            height: 4vh;
+      }
+
+      /* .firstSection {
+            width: 100%;
+      } */
+      
+      footer {
+            width: 100%;
+      }
+
+      .threeDivs{
+            display: flex;
+            width: 85%;
+            padding: 10px 5px;
+            padding-left: 90px;
+            margin-left: 10px;
+      }
+      
+      .threeDivs h2 {
+            font-size: 1.2rem;
+            text-decoration: underline;
+            color: rgba(0, 162, 255, 0.864);
+      
+      }
+
+      #secondMenu{
+            margin-right: 5rem;
+      }
+      
+      #secondMenu ul li {
+            list-style-type: circle blue;
+            color: #fff;
+            text-decoration: none;
+            font-size: smaller;
+      }
+      
+      
+      .about {
+            font-size: 0.9rem;
+            padding: 0 5px;
+            margin-right: 3em;
+      }
+      
+      
+      #inputSect {
+            margin-top: 10px;
+            margin-right: 0;
+            width: 6rem;
+      }
+      
+      #subBtn {
+            margin-left: 0;
+            width: 3rem;
+            background-color: rgba(0, 162, 255, 0.864);
+      }
+      
+      #subBlock {
+            display: flex;
+      }
+      
+      .bxs-bell-ring {
+            padding-top: 3px;
+      }
+      
+      .bxl-instagram-alt,
+      .bxl-whatsapp,
+      .bxl-twitter,
+      .bxl-tiktok,
+      .bxl-linkedin-square,
+      .bxl-facebook-circle {
+            padding-top: 2px;
+            background-color: rgb(16, 194, 87);
+            border-radius: 5px;
+      }
+      
+      .footerDivs {
+            font-size: 0.3rem;
+            text-align: center;
+            padding-bottom: 2em;
+      }
+}

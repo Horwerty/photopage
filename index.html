@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+      <section class="firstSection">
+            <div class="container">
+                  <header id="headerNav">
+                        <div class="logo"><a href="#heroId">M-SHOOT</a></div> 
+                        <div class="" id="menu">
+                              <nav>
+                                    <ul>
+                                          <li><a href="#heroId">HOME</a>
+                                          <!-- <div class="dropDown">
+                                                <ul>
+                                                      <li>ONE</li>
+                                                      <li>TWO</li>
+                                                      <li>THREE</li>
+                                                </ul>
+                                          </div> -->
+                                          </li>
+                                          <li> <a href="#sliderTitle">EXTRAIT</a> </li>
+                                          <li> <a href="#sectionTwo">POTRAIT</a></li>
+                                          <li> <a href="#shootingMode">SHOOTING</a></li>
+                                          <li> <a href="#aboutUs">ABOUT</a></li>
+                                    </ul>
+                              </nav>
+                        </div>
+                        <div class="userLogo">
+                              <i class='bx bxs-user'></i>
+                        </div>
+                  </header>
+                  <div class="heroCover"></div>
+                  <div class="hero" id="heroId">
+                        <img src="./download (1)_1.png" alt="cameraLogo">
+                        <h2>LET'S TAKE SOME PICTURES</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit sed optio dignissimos, ratione tempora odit magnam veniam inventore dolorum. Nulla et nam cupiditate quia? Quisquam fugiat error odit non vero?</p>
+                        <button id="heroBtn" onclick="">Read More</button>
+                  </div>
+      
+            </div>
+            <i class='bx bx-dots-horizontal-rounded' style='color:#352f2f' id="dotted" ></i>
+      </section>
+      <div class="slider">
+            <div class="sliderTitle" id="sliderTitle">
+                  <h2>EXTRAIT MODEL PHOTO</h2>
+            </div>
+            <div class="sliderDiv">
+                  <i class="bx bx-chevron-left" id="sliderBtn" onclick="slideLeft()"></i>
+            <div class="eachCard">
+                  <h5>lorem <span id="topLogo">lorem bkltiu</span></h5>
+                  <i class='bx bxs-message-alt'></i><span>Write text here | text here</span>
+                  <p>Location:</p>
+                  <p>Age:<span id="blue">Twenty five</span></p>
+                  <p>Shape:<span id="gold">lorem lorem</span></p>
+                  <p>Gender:<span id="green">Male</span></p>
+                  <img src="https://media.gettyimages.com/photos/young-man-walking-through-a-space-in-a-carefree-way-picture-id1343501946?k=20&m=1343501946&s=612x612&w=0&h=v6m7kIpI4GVdtGmOBz_TNydImfYotmwuijrCDpkOcj8=" alt="maleImage">
+                  <div class="btnDiv">
+                        <button id="enlarge">Click Here</button><button id="selectPix">View</button>
+                  </div> 
+            </div>
+            <div class="eachCard">
+                  <h5>lorem <span id="topLogo">lorem bkltiu</span></h5>
+                  <i class='bx bxs-message-alt'></i><span>Write text here | text here</span>
+                  <p>Location:</p>
+                  <p>Age:<span id="blue">Twenty five</span></p>
+                  <p>Shape:<span id="gold">lorem lorem</span></p>
+                  <p>Gender:<span id="green">Female</span></p>
+                  <img src="https://media.gettyimages.com/photos/portrait-of-young-woman-on-white-background-picture-id1300177594?k=20&m=1300177594&s=612x612&w=0&h=nq9nZ75VEbkXrhIUJgswvHyj-czBNNPWVwXORp8CWbA=" alt="maleImage">
+                  <div class="btnDiv">
+                        <button id="enlarge">Click Here</button><button id="selectPix">View</button>
+                  </div>
+            </div>
+            <div class="eachCard">
+                  <h5>lorem <span id="topLogo">lorem bkltiu</span></h5>
+                  <i class='bx bxs-message-alt'></i><span>Write text here | text here </span>
+                  <p>Location:</p>
+                  <p>Age:<span id="blue">Twenty five</span></p>
+                  <p>Shape:<span id="gold">lorem lorem</span></p>
+                  <p>Gender:<span id="green">Female</span></p>
+                  <img src="https://media.gettyimages.com/photos/portrait-of-young-woman-standing-at-small-car-picture-id1042695956?k=20&m=1042695956&s=612x612&w=0&h=wlK9z6IEvhACJG7z6MVYhlIVuCrU1_Z63UcUIKKTtUU=" alt="maleImage">
+                  <div class="btnDiv">
+                        <button id="enlarge">Click Here</button><button id="selectPix">View</button>
+                  </div>
+            </div>
+            <i class="bx bx-chevron-right" id="sliderBtn" onclick="slideRyt()"></i>
+            <!-- <div class="eachCard">
+                  <h3></h3>
+                  <i></i><span>Write text here</span>
+                  <p>Location:</p>
+                  <p>Age:</p>
+                  <p>Shape:</p>
+                  <p>Gender</p>
+                  <img src="" alt="maleImage">
+                  <button id="enlarge">Click Here</button><button id="selectPix">View</button>
+            </div>
+            <div class="eachCard">
+                  <h3></h3>
+                  <i></i><span>Write text here</span>
+                  <p>Location:</p>
+                  <p>Age:</p>
+                  <p>Shape:</p>
+                  <p>Gender</p>
+                  <img src="" alt="maleImage">
+                  <button id="enlarge">Click Here</button><button id="selectPix">View</button>
+            </div> -->
+            </div>
+      </div>
+      <div class="sectionTwo" id="sectionTwo">
+            <div class="partA">
+                  <h3>PORTRAIT SHOOTING</h3>
+                  <img src="https://media.gettyimages.com/photos/portrait-of-young-woman-standing-against-white-background-picture-id1331137447?k=20&m=1331137447&s=612x612&w=0&h=iVfgdfw2hESSQuMdpTx-tnurFHVHqtpuKEZVwqOFY6o=" alt="femaleOrangeT">
+            </div>
+            <div class="partB" id="gridSect">
+                  <div class="partBone">
+                        <div class="grid1">
+                              <i class='bx bxs-camera' style='color:rgba(224, 215, 215, 0.88)' id="bigCam"></i>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dicta corporis quo omnis, nisi nostrum consectetur ut magnam accusamus deleniti laboriosam veniam in nesciunt, culpa ex voluptas. Quam, exercitationem omnis?</p>
+                        </div>
+                        <div class="grid2">
+                              <img src="https://media.gettyimages.com/photos/ezra-bailey-picture-id594203323?k=20&m=594203323&s=612x612&w=0&h=-_PknDzXQGchAZcHYa5AK4Nh7CtKTlBIA0L5q7FJlS4=" alt="suitMan">
+                        </div>
+                        <div class="grid3">
+                              <img src="https://media.gettyimages.com/photos/hispanic-man-in-a-closet-full-of-white-clothes-picture-id945578268?k=20&m=945578268&s=612x612&w=0&h=zMMw05GfI7zmD-PjNlM1qsXU3RbyQd0U2PdYIZZ0shE=" alt="casualOrange">
+                        </div>
+                        <div class="grid4">
+                              <img src="https://media.gettyimages.com/photos/man-walking-on-tropical-beach-japan-picture-id1225526919?k=20&m=1225526919&s=612x612&w=0&h=fbYBlbc-sKBeXB0CFqcfX-UKby6dkcJJGs2dyxOGNb4=" alt="beachMan">
+                        </div>
+                  </div>
+                  <div class="partBtwo">
+                        <div class="grid5">
+                              <h4><span><i class='bx bxs-message-alt'></i></span>amet consectetur adipisicing</h4>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem est eveniet autem cupiditate saepe sunt, ex sit, consectetur cum amet, suscipit hic minus magnam labore perferendis natus praesentium nemo.</p>
+                        </div>
+                        <div class="grid6">
+                              <img src="https://media.gettyimages.com/photos/portrait-of-young-man-against-wall-picture-id151082449?k=20&m=151082449&s=612x612&w=0&h=n4U2lPm7AYaXeyCEPUFKP6Dc8mMkxAjIGwwuQIqdLNM=" alt="jacketGuy">
+                        </div>
+                        <div class="grid7">
+                              <img src="https://media.gettyimages.com/photos/romantic-senior-couple-walking-on-beautiful-tropical-beach-mature-picture-id1325176033?k=20&m=1325176033&s=612x612&w=0&h=Y_neJzGF0R0MBm_LqBeJzHYxARenkqTod50nCDNebVc=" alt="couple">
+                        </div>
+                        <div class="grid8">
+                              <h4><span><i class='bx bxs-message-alt'></i></span> amet consectetur adipisicing</h4>
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum magni tempora ad eum esse consequuntur eveniet, voluptate aut nulla aliquid, enim at mollitia quisquam ut nostrum consectetur eos delectus maiores!
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <div class="sectionThree" id="shootingMode">
+            <h3 id="textHeading">SHOOTING MODE</h3>
+            <h5 id="textHeadingtwo">ALL SHOOT</h5>
+            <div class="allCards">
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(243, 235, 235, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/portrait-of-young-man-wearing-blue-jacket-picture-id900251510?k=20&m=900251510&s=612x612&w=0&h=jCFxxRYw4f2jLrtgn3zyir5tLTBkbPV6Gpls5ZN8KnA=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(255, 255, 255, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?k=20&m=1141508234&s=612x612&w=0&h=N7p2KaO8ZX3cF5_pf2PJ4sarm3GVzjP6-Bpxe3FsyaM=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(255, 247, 247, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/portrait-of-smiling-female-cyclist-riding-gravel-bike-at-sunset-on-picture-id1291588868?k=20&m=1291588868&s=612x612&w=0&h=BgVtWtAWlMvtb3EoT0k9VairQUr9_906Qf1aOBeKUK8=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(255, 255, 255, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/man-trying-on-jacket-while-looking-in-the-mirror-in-mens-clothing-picture-id814558492?k=20&m=814558492&s=612x612&w=0&h=AoBJDIoRcPkB2ELhivE6uqa6LnIcqsKBg8srwS8d1Vs=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(253, 244, 244, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/smiling-young-woman-against-white-background-picture-id1314491044?k=20&m=1314491044&s=612x612&w=0&h=MHsPdQwsT6pbZytJSJzxkIihSnppt2PByATLpZZ27J8=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(254, 253, 253, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/female-athlete-unzipping-jacket-while-standing-on-boardwalk-picture-id1314528167?k=20&m=1314528167&s=612x612&w=0&h=rnrkwLI6Nt4efcga5bfJcQzTqtiuRApctH78jZYBa1c=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(244, 244, 244, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/young-man-photographed-with-creative-lighting-picture-id542720923?k=20&m=542720923&s=612x612&w=0&h=0ogsN7N7qN6SS_bF47EVsbq7fPYD1zDdC5_YSZtzIyk=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(253, 253, 253, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/black-man-wearing-sunglasses-adjusting-jacket-picture-id707437721?k=20&m=707437721&s=612x612&w=0&h=rREdwj9rEoxCjNChK9KB8P6jhk5173cqa-VjPdud9Bg=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(255, 255, 255, 0.88)'  ></i>
+                              <img src="https://media.gettyimages.com/photos/man-looking-at-view-at-sunrise-in-los-glaciers-national-park-picture-id1144748802?k=20&m=1144748802&s=612x612&w=0&h=7tDm28AtLeHgdnP1ZEct46QhlkwnKE0hFN9NiO8zvzk=" alt="" id="gridImg">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <!-- <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(70, 61, 61, 0.88)'  ></i>
+                              <img src="" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(70, 61, 61, 0.88)'  ></i>
+                              <img src="" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(70, 61, 61, 0.88)'  ></i>
+                              <img src="" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <div class="combi">
+                              <i class='bx bxs-camera' style='color:rgba(70, 61, 61, 0.88)'  ></i>
+                              <img src="" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div>
+                  <div class="imgCard">
+                        <i class='bx bxs-camera' style='color:rgba(115,108,108,0.88)'  ></i>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, error sint quos cum deserunt delectus cupiditate laborum voluptate saepe eos sed temporibus accusantium neque? Nobis officia id reprehenderit vel vitae!</p>
+                        <button id="imgBtn" onclick="enlarge()">Click</button>
+                  </div> -->
+            </div>
+            <i class='bx bx-dots-horizontal-rounded bx-rotate-180' style='color:#352f2f'  ></i>
+      </div>
+</body>
+<footer>
+      <div class="threeDivs">
+            <div class="about" id="aboutUs">
+                  <h2>About Us</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id, eum tenetur ab eveniet commodi omnis repellat, magni illum culpa similique dolor temporibus. Nulla reprehenderit aspernatur nostrum quae voluptates cum.</p>
+                  <i class='bx bxl-facebook-circle'></i>
+                  <i class='bx bxl-instagram-alt'></i>
+                  <i class='bx bxl-whatsapp'></i>
+                  <i class='bx bxl-twitter'></i>
+                  <i class='bx bxl-tiktok'></i>
+                  <i class='bx bxl-linkedin-square'></i>
+            </div>
+            <div class="" id="secondMenu">
+                  <h2>Menu</h2>
+                  <div class="nav">
+                        <nav>
+                              <ul>
+                                    <li><a href="#heroId">HOME</a></li>
+                                    <li><a href="#sliderTitle">EXTRAIT</a> </li>
+                                    <li><a href="#sectionTwo">POTRAIT</a></li>
+                                    <li><a href="#shootingMode">SHOOTING</a></li>
+                                    <li><a href="#aboutUs">ABOUT</a></li>
+                              </ul>
+                        </nav>
+                  </div>
+            </div>
+            <div class="sub">
+                  <h2>Subscribe</h2>
+                  <div id="subBlock">
+                        <form action="text">
+                              <input type="text" id="inputSect">
+                        </form>
+                        <button id="subBtn"><i class='bx bxs-bell-ring' style="color: #fff;"></i></button>
+                  </div>
+            </div>
+      </div> 
+      <div class="footerDivs">
+            <div class="footerB">&copy; 2022, Designed by Horwerty</div>
+      </div>
+</footer>
+<script src="index.js"></script>
+</html>
