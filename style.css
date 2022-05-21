@@ -5,7 +5,7 @@
 }
 
 body {
-      width: 320px;
+      max-width: 1024px;
       background-color: rgb(0, 0, 0);
       margin: 0 auto;
 }
@@ -15,7 +15,8 @@ html {
 }
 
 .firstSection {
-      width: 100%;
+      /* width: 100%; */
+      position: sticky;
 }
 
 footer {
@@ -31,17 +32,92 @@ footer {
       height: 5rem;
       padding: 1.5rem;
       background-color: white;
-      position: sticky;
-      width: 100%;
+      /* width: 100%; */
 }
 
 #headerNav ul li {
       list-style: none;
-      display: inline;
+      display: none;
       font-size: 0.2rem;
 }
 
+/* .openMobileNav {
+      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.mobileNav {
+      height: 15rem;
+      position: fixed;
+      background-color:rgba(11, 11, 48, 0.997);
+      z-index: 9;
+      width: 18.5rem;
+       left: 0; 
+      right: 10;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      transition: 0.5s linear;
+}
+
+/* .mobileNav > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      height: 60%;
+}
+    
+.mobileNav > ul > li {
+      font-size: 0.7rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+} */
+
+/* #menuClip ul li {
+      display:flex;
+      flex-direction: column;
+      font-size: 1.0rem;
+      padding: 10px;
+}
+
+#menuClip a {
+      color: black;
+      text-decoration: none;
+      transform: translateX(1.5);
+}
+
+#menuClip a:hover {
+      transition: all ease 1s;
+      color: white;
+} */
+
+.bx-menu-alt-right {
+      cursor: pointer;
+}
+
+.userLogotwo {
+      margin-left: 0.7rem;
+      color: black;
+}
+
+.userLogotwo a {
+      color: black;
+      text-decoration: none;
+}
+
+.userLogotwo a:hover {
+      transition: all ease 1s;
+      text-decoration: underline;
+      color: #fff;
+}
+
+.userLogo {
+      display: none;
+}
+
+
 .bxs-user {
+      display: none;
       border-radius: 3px;
       background-color: rgba(0, 0, 255, 0.774);
       color: #fff;
@@ -55,8 +131,8 @@ footer {
       color: white;
       border:   none;
       height: 1.6rem;
-      width: 3rem;
-      padding: 5px 8px;
+      width: 3.5rem;
+      padding: 3px 8px;
       border-radius: 5px;
       background-image: linear-gradient(to right, blue,green, rgb(15, 230, 15), rgb(73, 212, 73));
       cursor: pointer;
@@ -65,6 +141,7 @@ footer {
 .logo a {
       color: white;
       text-decoration: none;
+      font-size: 0.5em;
 }
 
 #menu ul li {
@@ -84,7 +161,7 @@ footer {
 }
 
 .hero img {
-      width: 50px;
+      /* width: 50px; */
       height: 30px;
       background-color: white;
       padding-bottom: 3px;     
@@ -93,12 +170,12 @@ footer {
 .hero {
       padding-top: 1rem;
       z-index: 9;
-      width: 100%;
+      /* width: 100%; */
       background-size: cover;
       background-position: contain;
       position: relative;
       line-height: 0.8rem;
-      /* height: 20rem; */
+      /* height: 10rem; */
       text-align: center;
       font-size: 0.7em;
       padding-right: 50px;
@@ -141,30 +218,41 @@ footer {
       color: #fff;
 }
 
+#midLine {
+      height: 3px;
+      width: 80%;
+      margin:0 10%;
+}
+
+hr {
+      background-color: blue;
+      width: 3rem;
+}
+
 .sliderTitle  h2 {
       text-align: center;
       color: #fff;
-      text-decoration: overline gray;
-     font-size: 1.2rem; 
+     font-size: 1.2rem;
+     padding-bottom: 1.5rem;
 }
 
 .sliderDiv {
-      margin: 1em;
-      width: 95%;
+      margin: 1em 0;
+      width: 100%;
 }
 
 /* #sliderBtn {
-      
+     display: none; 
 } */
 
 .eachCard {
       border-radius: 10px;
       box-shadow: 2px 1px 1px black;
-      object-fit:inherit;
+      object-fit:contain;
       width: 90%;
-      margin: 20px;
+      margin: 15px ;
       color: #fff;
-      height: 35em;
+      /* height: 35em; */
       align-content: center;
       padding-left: 5px;
       display: flex;
@@ -173,7 +261,7 @@ footer {
 
 .eachCard img {
       max-width: 100%;
-      max-height: 68%;
+      max-height: 48%;
 }
 
 .eachCard h5 {
@@ -181,24 +269,31 @@ footer {
 }
 
 button {
-      margin-top: 10px;
       width: 6rem;
+      margin-top: 10px;
       border: none;
       /* border-radius: 5px; */
+}
+
+.btnDiv {
+      display: flex;
+      justify-content: space-between;
 }
 
 #enlarge {
       background-color: rgba(0, 0, 255, 0.787);
       color: #fff;
-      margin-right: 2.5em;
+      /* margin-right: 0em; */
       height: 4vh;
+      width: 6rem;
 }
 
-#selectPix {
+#selectPix  {
       background-color: green;
       color: #fff;
-      margin-left:3em;
+      /* margin-left:8vh; */
       height: 4vh;
+      width: 6rem;
 }
 
 #topLogo {
@@ -228,15 +323,15 @@ button {
       color: green;
 }
 .sectionTwo {
-      width: 95%;
+      width: 100%;
 }
 
 .partA {
       border: none;
       box-shadow: 2px 2px 2px black;
       object-fit:contain;
-      width: 88%;
-      margin-left: 35px;
+      width: 90%;
+      margin-left: 15px;
 }
 
 .partA h3 {
@@ -248,14 +343,14 @@ button {
 }
 
 .partA img {
-            max-width: 100%;
-            height: 86.5%;
+      max-width: 100%;
+      height: 90%;
 }
 
 .partB {
       padding-top: 2rem;
       width: 90%;
-      margin-left: 35px;
+      margin-left: 15px;
       margin-top: 25px;    
 }
 
@@ -363,8 +458,8 @@ button {
       color: #fff;
       object-fit: contain;
       width: 90%;
-      height: 25rem;
-      margin: 2.5px 25px;
+      /* height: 25rem; */
+      margin: 1px 25px;
 }
 
 .imgCard img {
@@ -385,17 +480,19 @@ button {
 }
 
 .threeDivs h2 {
-      font-size: 1.2rem;
-      text-decoration: underline;
+      font-size: 0.6rem;
       color: rgba(0, 162, 255, 0.864);
-
 }
 
 #secondMenu ul li {
       list-style-type: circle blue;
       color: #fff;
+}
+
+#secondMenu a {
+      color: #fff;
       text-decoration: none;
-      font-size: smaller;
+      font-size: 0.4rem;
 }
 
 
@@ -405,6 +502,9 @@ button {
       margin-right: 3em;
 }
 
+.sub {
+      margin-left: 1.2em;
+}
 
 #inputSect {
       margin-top: 10px;
@@ -450,23 +550,90 @@ button {
       margin-left: 50%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media  screen and (min-width: 768px) {
       body {
             width: 80%;
             background-color: rgb(0, 0, 0);
             margin: 0 auto;
       }
 
+
+      .logo {
+
+            color: white;
+            border:   none;
+            height: 1.6rem;
+            width: 7rem;
+            padding: 2px 5px;
+            border-radius: 5px;
+            background-image: linear-gradient(to right, blue,green, rgb(15, 230, 15), rgb(73, 212, 73));
+            cursor: pointer;
+      }
+      
+      .logo a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+      }
+
+      #headerNav ul li {
+            margin-right: 5em;
+            list-style: none;
+            display: inline;
+      }
+
+      hr {
+            background-color: blue;
+            width: 100%;
+      }
+      
+
       #menu ul li {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             padding: 5px;
             margin: 5px;
             box-shadow: 1px 1px 1px rgb(86, 84, 84);
             border-radius: 10px;
             cursor: pointer;
             border-top: solid rgba(0, 0, 0, 0.667);
-            /* transform: translateX(1.0);
-            transition: all 2s ease-in; */
+            transform:scaleX(1.5);
+      }
+
+      .mobileNav {
+             display: none;
+      }
+
+      #menu ul li:hover {
+            transition: all ease-in 1s;
+            background-color: rgb(16, 31, 88);
+      }
+
+      #menu a:hover {
+            color:#fff;
+      }
+
+      #menuClip ul li {
+            display:none;
+      }
+
+      .bx-menu-alt-right {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+      }
+
+      .userLogo {
+            display: flex;
+      }
+      .bxs-user {
+            border-radius: 3px;
+            background-color: rgba(0, 0, 255, 0.774);
+            color: #fff;
+            height: 1.5em;
+            width: 1.5em;
+            padding: 3px;
+            cursor: pointer;
       }
 
       .hero {
@@ -510,10 +677,10 @@ button {
             display: flex;
             flex-direction: row;
             row-gap: 1fr 2fr;
-            /* margin: 15px; */
+            margin: 15px 0;
             overflow-y: hidden;
-            /* object-fit: contain; */
-            height: 44rem;
+            object-fit: inherit;
+            height: 38rem;
             width: 100%;
             /* border: #fff solid; */
       }
@@ -522,26 +689,25 @@ button {
             border: none;
             box-shadow: 2px 2px 2px black;
             object-fit:contain;
-            max-width: 42%;
+            width: 42%;
             margin-left: 0;
-            margin-right: 0.5rem;
+            height: 38rem;
       }
       
       .partB {
-            /* padding-top: 2rem; */
             width: 58%;
-            margin-left: 10px;
-            margin-top:0;
+            height: 38rem;
+            margin-left: 5px;
       }
 
-      .partB p {
+      /* .partB p {
             font-size: 1em;
-      }
+      } */
         
       
       .partA img {
-            max-width: 100%;
-            height: 100%;
+            width: 100%;
+            height: 98%;
       }
       
       .partA h3 {
@@ -553,6 +719,7 @@ button {
       }
       
       .partBone {
+            margin-top: 0;
             color: #fff;
             /* border: solid tomato; */
             display: grid;
@@ -568,12 +735,16 @@ button {
       .partBone img {
             max-width: 100%;
       }
+
+      .partBone p {
+            font-size: 0.8em;
+      }
       
       .partBtwo {
             color: #fff;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            /* margin-top: 10px; */
+            margin-top: 10px;
             object-fit: contain;
       }
 
@@ -598,12 +769,16 @@ button {
             margin-right: 10px;
       }
       
-      .grid7 {
+      /* .grid7 {
             margin-right: 10px;
-      }
+      } */
       
       .partBtwo img {
             max-width: 100%;
+      }
+
+      .partBtwo p {
+            font-size: 0.8em;
       }
       
       .grid1 {
@@ -616,18 +791,25 @@ button {
       .eachCard {
             border-radius: 10px;
             box-shadow: 2px 1px 1px black;
-            object-fit:inherit;
+            object-fit:contain;
             width: 55rem;
-            margin: 3px;
+            margin: 5px 3px;
             color: #fff;
+      }
+
+      .eachCard img {
+            max-width: 100%;
+            max-height: 90%;
       }
 
       .sliderDiv {
             display: flex;
             flex-direction: row;
-            margin: 1em 0.5px;
+            justify-content: center;
+            margin: 0;
             width: 100%;
       }
+
       .sliderTitle  h2 {
             text-align: center;
             color: #fff;
@@ -635,14 +817,10 @@ button {
            font-size: 1.2rem; 
       }
       
-      .sliderDiv {
-            margin: 1em 0.5px;
-            width: 100%;
-      }
       
       #sliderBtn {
             cursor: pointer;
-            margin: 7em 0.1em;
+            margin: 7em 0;
             font-size: 1.8em;
             border: none;
             width: 5rem;
@@ -710,12 +888,8 @@ button {
            font-size: 1.2rem; 
       }
       
-      .sliderDiv {
-            margin: 1em 0.5px;
-            width: 95%;
-      }
       
-      #sliderBtn {
+      /* #sliderBtn {
             cursor: pointer;
             margin: 7em 0.1em;
             font-size: 1.8em;
@@ -725,6 +899,11 @@ button {
             background-color: rgba(14, 14, 244, 0.915);
             border-radius: 3px;
             color: white;
+      } */
+
+      .btnDiv {
+            display: flex;
+            justify-content: space-between;
       }
 
 
@@ -732,16 +911,18 @@ button {
             cursor: pointer;
             background-color: rgba(0, 0, 255, 0.787);
             color: #fff;
-            margin-right: 0;
+            /* margin-right: 0; */
             height: 4vh;
+            width: 6rem;
       }
       
       #selectPix {
             cursor: pointer;
             background-color: green;
             color: #fff;
-            margin-left:2em;
+            /* margin-left:2em; */
             height: 4vh;
+            width: 6rem;
       }
 
       /* .firstSection {
@@ -765,8 +946,7 @@ button {
       }
       
       .threeDivs h2 {
-            font-size: 1.2rem;
-            text-decoration: underline;
+            font-size: 1.3rem;
             color: rgba(0, 162, 255, 0.864);
       
       }
@@ -777,11 +957,14 @@ button {
       
       #secondMenu ul li {
             list-style-type: circle blue;
-            color: #fff;
             text-decoration: none;
             font-size: smaller;
       }
       
+      #secondMenu a {
+            font-size: 0.9em;
+            color: #fff;
+      }
       
       .about {
             font-size: 0.9rem;
@@ -809,6 +992,10 @@ button {
       .bxs-bell-ring {
             padding-top: 3px;
       }
+
+      .imgCard {
+            margin-top: 5px;
+      }
       
       .bxl-instagram-alt,
       .bxl-whatsapp,
@@ -828,3 +1015,23 @@ button {
             padding-bottom: 2em;
       }
 }
+
+/* @media screen and (min-width: 1024px) {
+      #enlarge {
+            cursor: pointer;
+            background-color: rgba(0, 0, 255, 0.787);
+            color: #fff;
+            margin-right: 0;
+            height: 4vh;
+            width: 6rem;
+      }
+      
+      #selectPix {
+            cursor: pointer;
+            background-color: green;
+            color: #fff;
+            margin-left:2.5em;
+            height: 4vh;
+            width: 6rem;
+      }
+} */
